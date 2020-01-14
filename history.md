@@ -1,0 +1,14 @@
+
+ - trained_models/2020-01-14T01:05:56.159272/my_model_EP210.h5 landed a few times on test.
+ - trained_models/2020-01-14T02:20:33.614608/my_model_EP610.h5 is doing kinda fine. I used `ground_reward = min(0, state_next[1] * (-10))` to penalize height. EXPLORATION_DECAY = 0.99995
+ - trained_models/2020-01-14T02:38:18.054203/my_model_EP312.h5 is doing kinda fine too. I used EXPLORATION_DECAY = 0.995
+ - trained_models/2020-01-14T02:20:33.614608/my_model_EP860.h5 is doing pretty good. "Average score of 100 trials: 214.52675318749309". Solved!!
+ - trained_models/2020-01-14T02:38:18.054203/my_model_EP635.h5 is doing good, but did not solve yet. "Average score of 100 trials: 161.77532215522038"
+ - trained_models/2020-01-14T02:20:33.614608/my_model_EP999.h5 got worst. It "unsolved"... "Average score of 100 trials: 187.00012979779072"
+ - trained_models/2020-01-14T03:30:38.665527 => `reward += reward += min(0, state_next[1] * (-5))` and `min(0, np.abs(state_next[0]) * (-5))`. EXPLORATION_DECAY = 0.995
+ - trained_models/2020-01-14T02:59:45.526284/my_model_EP775.h5 is DA BOSS!! "Average score of 100 trials: 233.6706164659063". But dammit I forgot which setupt I used.... I think I used `reward += reward += min(0, state_next[1] * (-10))` and `min(0, np.abs(state_next[0]) * (-10))`.
+ - trained_models/2020-01-14T02:59:45.526284/my_model_EP900.h5 . da boss got a bit worse. "Average score of 100 trials: 209.1924158131841"
+ - trained_models/2020-01-14T02:59:45.526284/my_model_EP979.h5 . da boss is retiring. "Average score of 100 trials: 147.62607031315892"
+ - trained_models/2020-01-14T02:59:45.526284/my_model_EP999.h5 . DA BOSS ressurected once again!! "Average score of 100 trials: 228.08662729610904"
+ - trained_models/2020-01-14T03:30:38.665527/my_model_EP274.h5 . This one is converging pretty quickly. It's history is very clean too. "Average score of 100 trials: 151.05447494996508"
+ - trained_models/2020-01-14T03:30:38.665527/my_model_EP467.h5 . Never mind. "Average score of 100 trials: 85.87336679366418"
